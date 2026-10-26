@@ -1,0 +1,1303 @@
+:root {
+  --bg-obsidian: #07090E;
+  --bg-vitrine: #0E131D;
+  --bg-vitrine-elevated: #131A28;
+  --sapphire-pedestal: #162C58;
+  --champagne-prong: #D4B483;
+  --champagne-soft: rgba(212, 180, 131, 0.16);
+  --ink-diamond: #F5F7FA;
+  --ink-silver: #9AA6B8;
+  --ink-muted: #687588;
+  --edge-prism: rgba(214, 224, 242, 0.12);
+  --edge-gold: rgba(212, 180, 131, 0.38);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --max-w: 1320px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-obsidian);
+  color: var(--ink-diamond);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background:
+    radial-gradient(circle at 18% 8%, rgba(22, 44, 88, 0.34), transparent 42%),
+    radial-gradient(circle at 84% 14%, rgba(212, 180, 131, 0.11), transparent 36%),
+    var(--bg-obsidian);
+  color: var(--ink-diamond);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  width: min(100% - 2.5rem, var(--max-w));
+  margin-inline: auto;
+}
+
+/* =========================================================================
+   1. TOP TELEMETRY STRIP & STICKY HEADER
+   ========================================================================= */
+.telemetry-bar {
+  background: rgba(10, 14, 22, 0.92);
+  border-bottom: 1px solid var(--edge-prism);
+  font-size: 0.76rem;
+  color: var(--ink-silver);
+}
+
+.telemetry-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.15rem;
+}
+
+.telemetry-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--champagne-prong);
+  box-shadow: 0 0 8px var(--champagne-prong);
+}
+
+.telemetry-links {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.telemetry-links a:hover {
+  color: var(--champagne-prong);
+}
+
+.sep {
+  color: var(--ink-muted);
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 60;
+  background: rgba(7, 9, 14, 0.84);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--edge-prism);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  min-height: 4.4rem;
+}
+
+.brand-logo img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.65rem;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--ink-silver);
+}
+
+.primary-nav a {
+  transition: color 0.18s ease;
+}
+
+.primary-nav a:hover {
+  color: var(--ink-diamond);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.btn-gold,
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  padding: 0.55rem 1rem;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+  white-space: nowrap;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #DFC294 0%, #B89359 100%);
+  color: #07090E;
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  transform: translateY(-1px);
+  filter: brightness(1.06);
+}
+
+.btn-glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--edge-prism);
+  color: var(--ink-diamond);
+}
+
+.btn-glass:hover {
+  border-color: var(--edge-gold);
+  background: rgba(212, 180, 131, 0.08);
+}
+
+/* =========================================================================
+   2. HERO VITRINE (FUTURISTIC OPTICAL STAGE)
+   ========================================================================= */
+.hero-vitrine {
+  padding: 2.2rem 0 2.4rem;
+  border-bottom: 1px solid var(--edge-prism);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.trust-pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.68rem;
+  border-radius: 999px;
+  background: rgba(22, 44, 88, 0.36);
+  border: 1px solid rgba(212, 180, 131, 0.28);
+  font-size: 0.75rem;
+  color: var(--ink-diamond);
+}
+
+.star-cluster {
+  color: var(--champagne-prong);
+  letter-spacing: 0.04em;
+}
+
+.hero-copy h1 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2.15rem, 3.8vw, 3.45rem);
+  line-height: 1.06;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.85rem;
+}
+
+.hero-sub {
+  color: var(--ink-silver);
+  font-size: 0.94rem;
+  max-width: 54ch;
+  margin-bottom: 1.25rem;
+}
+
+.hero-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1.45rem;
+}
+
+.hero-spec-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  padding-top: 1.1rem;
+  border-top: 1px solid var(--edge-prism);
+}
+
+.hero-spec-strip strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--ink-diamond);
+}
+
+.hero-spec-strip span {
+  font-size: 0.73rem;
+  color: var(--ink-silver);
+}
+
+/* Interactive Hero Stage */
+.stage-main-card {
+  background: linear-gradient(160deg, rgba(19, 26, 40, 0.92), rgba(9, 13, 21, 0.96));
+  border: 1px solid var(--edge-gold);
+  border-radius: 10px;
+  padding: 0.85rem;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.55);
+}
+
+.stage-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.stage-badge {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  color: var(--champagne-prong);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.view-mode-switch {
+  display: inline-flex;
+  background: rgba(7, 9, 14, 0.75);
+  border: 1px solid var(--edge-prism);
+  border-radius: 6px;
+  padding: 2px;
+  flex-shrink: 0;
+}
+
+.mode-btn {
+  padding: 0.24rem 0.58rem;
+  font-size: 0.72rem;
+  border-radius: 4px;
+  color: var(--ink-silver);
+}
+
+.mode-btn.active {
+  background: var(--champagne-prong);
+  color: #07090E;
+  font-weight: 600;
+}
+
+.stage-media-frame {
+  position: relative;
+  width: 100%;
+  height: 290px;
+  max-height: 36vh;
+  border-radius: 7px;
+  overflow: hidden;
+  background: #05070B;
+  cursor: zoom-in;
+}
+
+.stage-media-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.35s ease;
+}
+
+.stage-media-frame:hover img {
+  transform: scale(1.02);
+}
+
+.stage-thumb-rail {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+  margin-top: 0.65rem;
+}
+
+.stage-thumb {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--edge-prism);
+  text-align: left;
+  transition: border-color 0.16s ease;
+}
+
+.stage-thumb.active,
+.stage-thumb:hover {
+  border-color: var(--champagne-prong);
+  background: rgba(212, 180, 131, 0.09);
+}
+
+.stage-thumb img {
+  width: 100%;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.stage-thumb span {
+  font-size: 0.68rem;
+  color: var(--ink-silver);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* =========================================================================
+   3. SECTION HEADINGS & FILTER TOOLBARS
+   ========================================================================= */
+.section-vault,
+.section-atelier,
+.section-latest,
+.section-reviews,
+.section-showroom {
+  padding: 2.8rem 0;
+  border-bottom: 1px solid var(--edge-prism);
+}
+
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.section-head h2,
+.latest-header h2,
+.showroom-info-card h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.65rem, 2.6vw, 2.35rem);
+  line-height: 1.12;
+}
+
+.section-sub {
+  color: var(--ink-silver);
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+}
+
+.vault-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.filter-pills {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.filter-pill,
+.rev-pill {
+  padding: 0.38rem 0.78rem;
+  border-radius: 6px;
+  font-size: 0.76rem;
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  color: var(--ink-silver);
+  transition: all 0.16s ease;
+}
+
+.filter-pill.active,
+.filter-pill:hover,
+.rev-pill.active,
+.rev-pill:hover {
+  border-color: var(--champagne-prong);
+  color: var(--ink-diamond);
+  background: rgba(212, 180, 131, 0.12);
+}
+
+.global-photo-toggle {
+  padding: 0.38rem 0.78rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  border: 1px solid var(--edge-gold);
+  background: rgba(22, 44, 88, 0.4);
+  color: var(--champagne-prong);
+}
+
+/* =========================================================================
+   4. THE VAULT GRID (COMPACT LUXURY VITRINE CELLS)
+   ========================================================================= */
+.vault-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.vault-card {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.vault-card:hover {
+  border-color: var(--edge-gold);
+  transform: translateY(-2px);
+}
+
+.vault-media {
+  position: relative;
+  width: 100%;
+  height: 205px;
+  max-height: 26vh;
+  background: #05070B;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.vault-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.vault-card:hover .vault-media img {
+  transform: scale(1.03);
+}
+
+.vault-badge-bar {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  right: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.35rem;
+  pointer-events: none;
+}
+
+.vault-cat-tag {
+  background: rgba(7, 9, 14, 0.82);
+  backdrop-filter: blur(6px);
+  border: 1px solid var(--edge-prism);
+  padding: 0.16rem 0.48rem;
+  border-radius: 4px;
+  font-size: 0.66rem;
+  color: var(--champagne-prong);
+}
+
+.card-swap-btn {
+  pointer-events: auto;
+  background: rgba(22, 44, 88, 0.88);
+  border: 1px solid var(--edge-gold);
+  padding: 0.16rem 0.46rem;
+  border-radius: 4px;
+  font-size: 0.65rem;
+  color: var(--ink-diamond);
+}
+
+.vault-body {
+  padding: 0.78rem 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.28rem;
+  flex: 1;
+}
+
+.vault-body h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.08rem;
+  line-height: 1.2;
+  color: var(--ink-diamond);
+}
+
+.vault-spec {
+  font-size: 0.75rem;
+  color: var(--ink-silver);
+}
+
+.vault-origin {
+  margin-top: auto;
+  padding-top: 0.45rem;
+  font-size: 0.69rem;
+  color: var(--champagne-prong);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* =========================================================================
+   5. ON-SITE MASTER JEWELER & HOROLOGY BENCH
+   ========================================================================= */
+.atelier-layout {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.atelier-visual-pair {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.9rem;
+}
+
+.atelier-plate {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.atelier-plate img {
+  width: 100%;
+  height: 195px;
+  max-height: 25vh;
+  object-fit: cover;
+}
+
+.atelier-plate figcaption {
+  padding: 0.68rem 0.85rem;
+}
+
+.atelier-plate strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--champagne-prong);
+}
+
+.atelier-plate span {
+  font-size: 0.75rem;
+  color: var(--ink-silver);
+}
+
+.service-matrix {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  divide-y: 1px solid var(--edge-prism);
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.76rem 1rem;
+  border-bottom: 1px solid var(--edge-prism);
+}
+
+.service-row:last-child {
+  border-bottom: none;
+}
+
+.service-title-col h3 {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-diamond);
+}
+
+.service-title-col span {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--ink-silver);
+}
+
+.service-tag {
+  font-size: 0.7rem;
+  color: var(--champagne-prong);
+  background: rgba(212, 180, 131, 0.1);
+  border: 1px solid rgba(212, 180, 131, 0.25);
+  padding: 0.22rem 0.55rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* =========================================================================
+   6. NATIVE BUILT-IN SOCIAL VIEWER ("LATEST from Anthony Jewelers:")
+   ========================================================================= */
+.latest-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.view-more-link {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--champagne-prong);
+  padding: 0.38rem 0.8rem;
+  border: 1px solid var(--edge-gold);
+  border-radius: 6px;
+  transition: background 0.16s ease;
+}
+
+.view-more-link:hover {
+  background: rgba(212, 180, 131, 0.14);
+}
+
+.latest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.latest-card {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.latest-card:hover {
+  border-color: var(--champagne-prong);
+  transform: translateY(-2px);
+}
+
+.latest-card-media {
+  position: relative;
+  width: 100%;
+  height: 215px;
+  max-height: 27vh;
+  background: #05070B;
+  overflow: hidden;
+}
+
+.latest-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.latest-date-pill {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  background: rgba(7, 9, 14, 0.84);
+  border: 1px solid var(--edge-prism);
+  padding: 0.16rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.68rem;
+  color: var(--champagne-prong);
+}
+
+.latest-card-body {
+  padding: 0.8rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.latest-card-body h3 {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--ink-diamond);
+}
+
+.latest-card-body p {
+  font-size: 0.77rem;
+  color: var(--ink-silver);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* =========================================================================
+   7. CLIENT COMMISSIONS, CUSTOMER PHOTOS & VERIFIED REVIEWS
+   ========================================================================= */
+.customer-photo-strip {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding-bottom: 0.65rem;
+  margin-bottom: 1.35rem;
+  scrollbar-width: thin;
+}
+
+.cust-photo-chip {
+  flex: 0 0 132px;
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 7px;
+  overflow: hidden;
+  cursor: zoom-in;
+  transition: border-color 0.16s ease;
+}
+
+.cust-photo-chip:hover {
+  border-color: var(--champagne-prong);
+}
+
+.cust-photo-chip img {
+  width: 100%;
+  height: 102px;
+  object-fit: cover;
+}
+
+.cust-photo-chip span {
+  display: block;
+  padding: 0.28rem 0.45rem;
+  font-size: 0.67rem;
+  color: var(--ink-silver);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.reviews-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+}
+
+.review-card {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.review-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.review-author {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--ink-diamond);
+}
+
+.review-meta {
+  font-size: 0.69rem;
+  color: var(--ink-silver);
+}
+
+.review-stars {
+  color: var(--champagne-prong);
+  font-size: 0.78rem;
+}
+
+.review-text {
+  font-size: 0.78rem;
+  color: var(--ink-silver);
+  line-height: 1.48;
+}
+
+.review-thumbs {
+  display: flex;
+  gap: 0.45rem;
+  margin-top: auto;
+  padding-top: 0.35rem;
+}
+
+.review-thumbs img {
+  width: 54px;
+  height: 54px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid var(--edge-gold);
+  cursor: zoom-in;
+}
+
+/* =========================================================================
+   8. SHOWROOM & FOOTER
+   ========================================================================= */
+.showroom-grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 1.5rem;
+  align-items: stretch;
+}
+
+.showroom-info-card {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-gold);
+  border-radius: 8px;
+  padding: 1.35rem;
+}
+
+.showroom-lead {
+  color: var(--ink-silver);
+  font-size: 0.85rem;
+  margin: 0.35rem 0 1.1rem;
+}
+
+.showroom-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.showroom-details dt {
+  font-size: 0.7rem;
+  color: var(--champagne-prong);
+  font-weight: 600;
+}
+
+.showroom-details dd {
+  font-size: 0.84rem;
+  color: var(--ink-diamond);
+}
+
+.showroom-details a:hover {
+  color: var(--champagne-prong);
+}
+
+.detail-note {
+  display: block;
+  font-size: 0.74rem;
+  color: var(--ink-silver);
+}
+
+.social-links-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.showroom-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.showroom-photo {
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-prism);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: zoom-in;
+}
+
+.showroom-photo img {
+  width: 100%;
+  height: 155px;
+  max-height: 22vh;
+  object-fit: cover;
+}
+
+.showroom-photo figcaption {
+  padding: 0.45rem 0.65rem;
+  font-size: 0.72rem;
+  color: var(--ink-silver);
+}
+
+.site-footer {
+  padding: 1.8rem 0 2.2rem;
+  background: #04060A;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-brand img {
+  height: 40px;
+  width: auto;
+}
+
+.footer-brand p {
+  font-size: 0.78rem;
+  color: var(--ink-silver);
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--ink-silver);
+}
+
+.footer-links a:hover {
+  color: var(--champagne-prong);
+}
+
+/* =========================================================================
+   9. GEMOLOGICAL LOUPE LIGHTBOX & NATIVE MOBILE DOCK
+   ========================================================================= */
+.loupe-dialog {
+  margin: auto;
+  background: var(--bg-vitrine-elevated);
+  color: var(--ink-diamond);
+  border: 1px solid var(--edge-gold);
+  border-radius: 10px;
+  padding: 0;
+  max-width: min(92vw, 720px);
+  width: 100%;
+}
+
+.loupe-dialog::backdrop {
+  background: rgba(4, 6, 10, 0.86);
+  backdrop-filter: blur(8px);
+}
+
+.loupe-modal-inner {
+  position: relative;
+  padding: 1rem;
+}
+
+.loupe-close {
+  position: absolute;
+  top: 0.65rem;
+  right: 0.65rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(7, 9, 14, 0.85);
+  border: 1px solid var(--edge-prism);
+  color: var(--ink-diamond);
+  z-index: 2;
+}
+
+.loupe-img-wrap {
+  width: 100%;
+  max-height: 62vh;
+  overflow: hidden;
+  border-radius: 6px;
+  background: #04060A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loupe-img-wrap img {
+  max-height: 60vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.loupe-meta {
+  padding-top: 0.65rem;
+  font-size: 0.84rem;
+  color: var(--champagne-prong);
+  text-align: center;
+}
+
+.mobile-dock {
+  display: none;
+}
+
+/* =========================================================================
+   10. NATIVE MOBILE LAYOUT & STRICT VIEWPORT-SAFE IMAGE BOUNDS
+   ========================================================================= */
+@media (max-width: 980px) {
+  .hero-grid,
+  .atelier-layout,
+  .showroom-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .hero-copy,
+  .hero-stage,
+  .stage-main-card {
+    min-width: 0;
+  }
+
+  .vault-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .reviews-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 4.4rem;
+  }
+
+  .container {
+    width: min(100% - 1.5rem, var(--max-w));
+  }
+
+  .hide-sm,
+  .primary-nav {
+    display: none;
+  }
+
+  .header-inner {
+    min-height: 3.6rem;
+  }
+
+  .brand-logo img {
+    height: 36px;
+  }
+
+  .btn-gold,
+  .btn-glass {
+    padding: 0.44rem 0.72rem;
+    font-size: 0.74rem;
+  }
+
+  .hero-vitrine {
+    padding: 1.15rem 0 1.4rem;
+  }
+
+  .hero-grid {
+    gap: 1.1rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 1.85rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-sub {
+    font-size: 0.82rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .hero-spec-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.4rem;
+    padding-top: 0.75rem;
+  }
+
+  /* Strict Mobile Image Height Caps — Never takes up screen view! */
+  .stage-media-frame {
+    height: 185px;
+    max-height: 25svh;
+  }
+
+  .stage-thumb img {
+    height: 34px;
+  }
+
+  .section-vault,
+  .section-atelier,
+  .section-latest,
+  .section-reviews,
+  .section-showroom {
+    padding: 1.75rem 0;
+  }
+
+  /* Native 2-Column Mobile Vitrine Grid */
+  .vault-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .vault-media {
+    height: 132px;
+    max-height: 19svh;
+  }
+
+  .vault-body {
+    padding: 0.55rem 0.6rem;
+  }
+
+  .vault-body h3 {
+    font-size: 0.92rem;
+  }
+
+  .vault-spec {
+    font-size: 0.68rem;
+  }
+
+  .atelier-visual-pair {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.6rem;
+  }
+
+  .atelier-plate img {
+    height: 118px;
+    max-height: 17svh;
+  }
+
+  .atelier-plate figcaption {
+    padding: 0.48rem 0.55rem;
+  }
+
+  .atelier-plate strong {
+    font-size: 0.88rem;
+  }
+
+  .atelier-plate span {
+    font-size: 0.66rem;
+  }
+
+  .service-row {
+    padding: 0.6rem 0.75rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+  }
+
+  /* Latest 3 Media Viewer on Mobile: Sleek Horizontal Row Stack (<= 13svh per image) */
+  .latest-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.6rem;
+  }
+
+  .latest-card {
+    display: grid;
+    grid-template-columns: 118px minmax(0, 1fr);
+    align-items: stretch;
+  }
+
+  .latest-card-media {
+    height: 100%;
+    min-height: 92px;
+    max-height: 108px;
+  }
+
+  .latest-date-pill {
+    left: 0.35rem;
+    bottom: 0.35rem;
+    font-size: 0.6rem;
+    padding: 0.14rem 0.38rem;
+  }
+
+  .latest-card-body {
+    padding: 0.55rem 0.65rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .latest-card-body h3 {
+    font-size: 0.9rem;
+    line-height: 1.18;
+  }
+
+  .latest-card-body p {
+    font-size: 0.72rem;
+    -webkit-line-clamp: 2;
+  }
+
+  .cust-photo-chip {
+    flex: 0 0 104px;
+  }
+
+  .cust-photo-chip img {
+    height: 78px;
+  }
+
+  .reviews-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.65rem;
+  }
+
+  .showroom-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
+  }
+
+  .showroom-photo img {
+    height: 108px;
+    max-height: 16svh;
+  }
+
+  /* Native Mobile App Dock */
+  .mobile-dock {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 80;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgba(7, 9, 14, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--edge-gold);
+    padding: 0.35rem 0.25rem calc(0.35rem + env(safe-area-inset-bottom));
+  }
+
+  .dock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.15rem;
+    font-size: 0.65rem;
+    color: var(--ink-silver);
+  }
+
+  .dock-item.dock-call {
+    color: var(--champagne-prong);
+    font-weight: 600;
+  }
+}
