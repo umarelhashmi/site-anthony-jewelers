@@ -12,8 +12,7 @@
       category: "bridal",
       categoryLabel: "Wedding & Engagement Sets",
       origin: "Lake Nona Showroom",
-      studioImg: "assets/images/ai/edit-oval-halo-ring.webp",
-      originalImg: "assets/images/gmaps/gmaps-photo-03.jpg"
+      img: "assets/images/ai/edit-oval-halo-ring.webp"
     },
     {
       id: "dutch-marquis-tulip",
@@ -22,8 +21,7 @@
       category: "custom",
       categoryLabel: "Custom One-of-a-Kind",
       origin: "Client Commission (Ishaq)",
-      studioImg: "assets/images/gmaps/gmaps-photo-24.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-22.jpg"
+      img: "assets/images/gmaps/gmaps-photo-24.jpg"
     },
     {
       id: "oval-solitaire-hidden-halo",
@@ -32,8 +30,7 @@
       category: "bridal",
       categoryLabel: "Wedding & Engagement Sets",
       origin: "Client Commission (Brett Maneri)",
-      studioImg: "assets/images/gmaps/gmaps-photo-08.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-08.jpg"
+      img: "assets/images/gmaps/gmaps-photo-08.jpg"
     },
     {
       id: "oval-marquise-bridal-set",
@@ -42,8 +39,7 @@
       category: "custom",
       categoryLabel: "Custom One-of-a-Kind",
       origin: "Client Commission (Saja Alkhafaji)",
-      studioImg: "assets/images/gmaps/gmaps-photo-11.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-11.jpg"
+      img: "assets/images/gmaps/gmaps-photo-11.jpg"
     },
     {
       id: "custom-green-marquise-baguette",
@@ -52,8 +48,7 @@
       category: "custom",
       categoryLabel: "Custom One-of-a-Kind",
       origin: "Client Commission (Hombuswa Curaçao)",
-      studioImg: "assets/images/gmaps/gmaps-photo-18.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-17.jpg"
+      img: "assets/images/gmaps/gmaps-photo-18.jpg"
     },
     {
       id: "oval-yellow-gold-wedding-set",
@@ -62,8 +57,7 @@
       category: "bridal",
       categoryLabel: "Wedding & Engagement Sets",
       origin: "Client Commission (Seth Rivera)",
-      studioImg: "assets/images/gmaps/gmaps-photo-19.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-20.jpg"
+      img: "assets/images/gmaps/gmaps-photo-19.jpg"
     },
     {
       id: "three-stone-sapphire-diamond",
@@ -72,8 +66,7 @@
       category: "fine",
       categoryLabel: "Fine Jewelry",
       origin: "Lake Nona Showroom",
-      studioImg: "assets/images/gmaps/gmaps-photo-10.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-10.jpg"
+      img: "assets/images/gmaps/gmaps-photo-10.jpg"
     },
     {
       id: "rose-gold-gemstone-trio",
@@ -82,8 +75,7 @@
       category: "fine",
       categoryLabel: "Fine Jewelry",
       origin: "Lake Nona Showroom",
-      studioImg: "assets/images/gmaps/gmaps-photo-05.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-05.jpg"
+      img: "assets/images/gmaps/gmaps-photo-05.jpg"
     },
     {
       id: "aquamarine-double-halo-pendant",
@@ -92,8 +84,7 @@
       category: "fine",
       categoryLabel: "Fine Necklaces",
       origin: "Lake Nona Showroom",
-      studioImg: "assets/images/ai/edit-aquamarine-pendant.webp",
-      originalImg: "assets/images/gmaps/gmaps-photo-06.jpg"
+      img: "assets/images/gmaps/gmaps-photo-06.jpg"
     },
     {
       id: "diamond-tennis-bracelets-bangles",
@@ -102,8 +93,7 @@
       category: "fine",
       categoryLabel: "Fine Bracelets",
       origin: "Lake Nona Showroom",
-      studioImg: "assets/images/ai/edit-bracelet-bar.webp",
-      originalImg: "assets/images/gmaps/gmaps-photo-07.jpg"
+      img: "assets/images/gmaps/gmaps-photo-07.jpg"
     },
     {
       id: "sunflower-collection-hakman",
@@ -112,8 +102,7 @@
       category: "designer",
       categoryLabel: "Hakman Designs",
       origin: "Official Designer Collection",
-      studioImg: "assets/images/ai/t2i-sunflower-collection.webp",
-      originalImg: "/api/media-proxy?id=489364752218498",
+      img: "/api/media-proxy?id=489364752218498",
       fallbackImg:
         "https://scontent-mia3-3.xx.fbcdn.net/v/t15.13418-10/166708464_461624255047674_835078241185368859_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=107&ccb=1-7&_nc_sid=aaa768&_nc_ohc=Cq0m_2T1ktgQ7kNvwG3kovF&_nc_oc=AdrFksMG-RytCtpRUQLqr7C_lNQzzxtFlc_wYctcAQTo35uDzstjKa_t-FWBBtm4xJzlIYV7xTcFlCGJWzCLAgLB&_nc_zt=23&_nc_ht=scontent-mia3-3.xx&_nc_gid=Vxb2zU0uV68oWenABiR4og&_nc_ss=7b289&oh=00_AQPBvcPNCCuZiP50M5DjIdEB2yELEXd41E4RCRqp3our6A&oe=6AE4985C",
       externalUrl: "https://www.facebook.com/AnthonyJewelersOfLakeNona/videos/489364752218498/"
@@ -125,8 +114,7 @@
       category: "designer",
       categoryLabel: "Yael Designs",
       origin: "Authorized Lake Nona Partner",
-      studioImg: "/api/media-proxy?id=6178208205584444",
-      originalImg: "/api/media-proxy?id=6178208205584444",
+      img: "/api/media-proxy?id=6178208205584444",
       fallbackImg:
         "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/474899172_28169256502719632_7306150219792759416_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=RlVO9f3y9xoQ7kNvwHdshwW&_nc_oc=Adojdn_2XFllyPM0RjR-hxt820tyndnPYPBg6V4hX-uC6IfJxBZFlXfYdZLHTmFnf3nvw3mWOaKDrvlXCRgQzd1I&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=Vxb2zU0uV68oWenABiR4og&_nc_ss=7b289&oh=00_AQPNMan9GQWuYkbulBfQhtifCzST-MmBJKkfN075v8ckxw&oe=6AE4A443",
       externalUrl: "https://www.facebook.com/photo/?fbid=6178208205584444&set=pcb.6178243315580933"
@@ -138,8 +126,7 @@
       category: "designer",
       categoryLabel: "Yael Designs",
       origin: "Authorized Lake Nona Partner",
-      studioImg: "/api/media-proxy?id=6178208825584382",
-      originalImg: "/api/media-proxy?id=6178208825584382",
+      img: "/api/media-proxy?id=6178208825584382",
       fallbackImg:
         "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/474776111_28169256609386288_6863547382541467110_n.jpg?stp=dst-jpg_tt6&cstp=mx1080x1080&ctp=s1080x1080&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eTfGBFDyVXcQ7kNvwFmoSS2&_nc_oc=AdrRmvLTs-5JX10Qu4S9mzOBfufWvOgkI8LLiYNwtu0UPpW1St2ZpEXATIJzrsp6HFrQ7gkiaFLjD_SRQqUujLQt&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=Vxb2zU0uV68oWenABiR4og&_nc_ss=7b289&oh=00_AQMxhMPIUlZpi4vir8d0xRDM6-ZptyQDFhv2xJ6oIMs1Tw&oe=6AE4AA0C",
       externalUrl: "https://www.facebook.com/photo/?fbid=6178208825584382&set=pcb.6178243315580933"
@@ -151,8 +138,7 @@
       category: "bridal",
       categoryLabel: "Wedding & Engagement Sets",
       origin: "December 2025 Showcase",
-      studioImg: "/api/media-proxy?id=1479013290328931",
-      originalImg: "/api/media-proxy?id=1479013290328931",
+      img: "/api/media-proxy?id=1479013290328931",
       fallbackImg:
         "https://scontent-mia3-2.xx.fbcdn.net/v/t39.30808-6/593423785_1479014340328826_7141101579104737941_n.jpg?stp=dst-jpg_tt6&cstp=mx750x1000&ctp=s750x1000&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lUJ7rjN4za4Q7kNvwEAjnu3&_nc_oc=AdrLyrQcyxHTbOal5SqeiC4nSv9xRZC8tAm8YOG-tuKJpOKE4JsQ0nxnPcdThk85W5brxP6l_pNWgUIlqqAgDhex&_nc_zt=23&_nc_ht=scontent-mia3-2.xx&_nc_gid=QD5ZmNKTtuRPxKPF8iZCTA&_nc_ss=7b289&oh=00_AQMbj8Blb72D-IsJu2o05eblLOAwSWhAEdvoP1DoqBjXog&oe=6AE4AE89",
       externalUrl: "https://www.facebook.com/photo/?fbid=1479013290328931&set=pcb.1479014270328833"
@@ -164,8 +150,7 @@
       category: "fine",
       categoryLabel: "Fine Jewelry",
       origin: "9971 Tagore Pl Showcase",
-      studioImg: "/api/media-proxy?id=1177694170460846",
-      originalImg: "/api/media-proxy?id=1177694170460846",
+      img: "/api/media-proxy?id=1177694170460846",
       fallbackImg:
         "https://scontent-mia3-1.xx.fbcdn.net/v/t39.30808-6/489399749_1274477067449222_2358945578949797894_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx1080x1440&ctp=p960x960&_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=pv1QXikhKm0Q7kNvwEbo4No&_nc_oc=AdoGvFxIju3CFuRSHL1Y_oxX3dHWGaC5eAJPWKbNmgkQL14S-bjIyHgADRfIxym-3b_f5UjvFeXztRPdA4hRcrvD&_nc_zt=23&_nc_ht=scontent-mia3-1.xx&_nc_gid=C__lcZTsdqtJJXRndGFI0Q&_nc_ss=7b289&oh=00_AQMdP8_2MNjTlAk26oPMM4sXZZGkHf39h_w0T3g5vjBhLA&oe=6AE4A847",
       externalUrl: "https://www.facebook.com/photo/?fbid=1177694170460846&set=pcb.1177694257127504"
@@ -177,8 +162,7 @@
       category: "custom",
       categoryLabel: "Custom One-of-a-Kind",
       origin: "Client Proposal in Paris (Ishaq)",
-      studioImg: "assets/images/gmaps/gmaps-photo-23.jpg",
-      originalImg: "assets/images/gmaps/gmaps-photo-23.jpg"
+      img: "assets/images/gmaps/gmaps-photo-23.jpg"
     }
   ];
 
@@ -399,39 +383,17 @@
   // =========================================================================
   // 4. HERO INTERACTIVE STAGE
   // =========================================================================
-  let heroMode = "studio";
   const heroMainImg = document.getElementById("heroMainImg");
   const heroStageLabel = document.getElementById("heroStageLabel");
-  const heroModeBtns = document.querySelectorAll("[data-hero-mode]");
   const heroThumbs = document.querySelectorAll(".stage-thumb");
-
-  function updateHeroDisplay() {
-    if (!heroMainImg) return;
-    const targetSrc =
-      heroMode === "original"
-        ? heroMainImg.getAttribute("data-original-src")
-        : heroMainImg.getAttribute("data-studio-src");
-    if (targetSrc) heroMainImg.src = targetSrc;
-  }
-
-  heroModeBtns.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      heroMode = btn.getAttribute("data-hero-mode") || "studio";
-      heroModeBtns.forEach((b) => b.classList.toggle("active", b === btn));
-      updateHeroDisplay();
-    });
-  });
 
   heroThumbs.forEach((thumb) => {
     thumb.addEventListener("click", () => {
       heroThumbs.forEach((t) => t.classList.toggle("active", t === thumb));
-      const studioSrc = thumb.getAttribute("data-studio");
-      const origSrc = thumb.getAttribute("data-original");
+      const src = thumb.getAttribute("data-src");
       const title = thumb.getAttribute("data-title");
-      if (heroMainImg) {
-        heroMainImg.setAttribute("data-studio-src", studioSrc || "");
-        heroMainImg.setAttribute("data-original-src", origSrc || "");
-        updateHeroDisplay();
+      if (heroMainImg && src) {
+        heroMainImg.src = src;
       }
       if (heroStageLabel && title) {
         heroStageLabel.textContent = title;
@@ -447,12 +409,10 @@
   }
 
   // =========================================================================
-  // 5. RENDER THE VAULT & GLOBAL PHOTO TOGGLE
+  // 5. RENDER THE VAULT
   // =========================================================================
   let activeVaultFilter = "all";
-  let forceShowroomOriginals = false;
   const vaultGrid = document.getElementById("vaultGrid");
-  const toggleAllOriginalsBtn = document.getElementById("toggleAllOriginalsBtn");
 
   function renderVault() {
     if (!vaultGrid) return;
@@ -462,9 +422,7 @@
 
     vaultGrid.innerHTML = filtered
       .map((item) => {
-        const hasDual = item.studioImg !== item.originalImg;
-        const activeSrc = forceShowroomOriginals ? item.originalImg : item.studioImg;
-        const altSrc = forceShowroomOriginals ? item.studioImg : item.originalImg;
+        const activeSrc = item.img;
         const fallbackAttr = item.fallbackImg
           ? `onerror="this.onerror=null;this.src='${esc(item.fallbackImg)}';"`
           : "";
@@ -474,7 +432,6 @@
             <div class="vault-media" data-loupe-src="${esc(activeSrc)}" data-loupe-title="${esc(item.title)} — ${esc(item.spec)}">
               <img
                 src="${esc(activeSrc)}"
-                data-alt-src="${esc(altSrc)}"
                 alt="${esc(item.title)}"
                 loading="lazy"
                 width="400"
@@ -483,13 +440,6 @@
               />
               <div class="vault-badge-bar">
                 <span class="vault-cat-tag">${esc(item.categoryLabel)}</span>
-                ${
-                  hasDual
-                    ? `<button type="button" class="card-swap-btn" data-swap-card="${esc(item.id)}">${
-                        forceShowroomOriginals ? "Loupe View" : "Original Photo"
-                      }</button>`
-                    : ""
-                }
               </div>
             </div>
             <div class="vault-body">
@@ -509,24 +459,6 @@
       })
       .join("");
 
-    // Wire individual card photo swap & lightbox
-    vaultGrid.querySelectorAll(".card-swap-btn").forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        e.stopPropagation();
-        const mediaWrap = btn.closest(".vault-media");
-        const img = mediaWrap ? mediaWrap.querySelector("img") : null;
-        if (!img) return;
-        const current = img.getAttribute("src");
-        const next = img.getAttribute("data-alt-src");
-        if (next) {
-          img.setAttribute("src", next);
-          img.setAttribute("data-alt-src", current);
-          mediaWrap.setAttribute("data-loupe-src", next);
-          btn.textContent = btn.textContent === "Original Photo" ? "Loupe View" : "Original Photo";
-        }
-      });
-    });
-
     vaultGrid.querySelectorAll(".vault-media").forEach((m) => {
       m.addEventListener("click", () => {
         const img = m.querySelector("img");
@@ -544,16 +476,6 @@
       renderVault();
     });
   });
-
-  if (toggleAllOriginalsBtn) {
-    toggleAllOriginalsBtn.addEventListener("click", () => {
-      forceShowroomOriginals = !forceShowroomOriginals;
-      toggleAllOriginalsBtn.querySelector("span").textContent = forceShowroomOriginals
-        ? "Showroom Originals: On"
-        : "Showroom Originals: Off";
-      renderVault();
-    });
-  }
 
   renderVault();
 
