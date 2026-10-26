@@ -926,6 +926,7 @@ button {
 .showroom-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: auto 1fr;
   gap: 0.75rem;
 }
 
@@ -935,19 +936,42 @@ button {
   border-radius: 8px;
   overflow: hidden;
   cursor: zoom-in;
+  align-self: start;
 }
 
 .showroom-photo img {
   width: 100%;
-  height: 155px;
+  height: 170px;
   max-height: 22vh;
   object-fit: cover;
+}
+
+.showroom-photo img.storefront-crop {
+  object-position: center 28%;
 }
 
 .showroom-photo figcaption {
   padding: 0.45rem 0.65rem;
   font-size: 0.72rem;
   color: var(--ink-silver);
+}
+
+.showroom-map-card {
+  grid-column: 1 / -1;
+  background: var(--bg-vitrine);
+  border: 1px solid var(--edge-gold);
+  border-radius: 8px;
+  overflow: hidden;
+  min-height: 220px;
+}
+
+.showroom-map-card iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  border: 0;
+  filter: invert(90%) hue-rotate(180deg) brightness(95%) contrast(92%);
 }
 
 .site-footer {
