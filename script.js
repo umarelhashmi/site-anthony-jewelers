@@ -429,7 +429,7 @@
 
         return `
           <article class="vault-card" data-id="${esc(item.id)}">
-            <div class="vault-media" data-loupe-src="${esc(activeSrc)}" data-loupe-title="${esc(item.title)} — ${esc(item.spec)}">
+            <div class="vault-media" data-loupe-src="${esc(activeSrc)}" data-loupe-title="${esc(item.title)}">
               <img
                 src="${esc(activeSrc)}"
                 alt="${esc(item.title)}"
@@ -438,21 +438,9 @@
                 height="300"
                 ${fallbackAttr}
               />
-              <div class="vault-badge-bar">
-                <span class="vault-cat-tag">${esc(item.categoryLabel)}</span>
-              </div>
             </div>
             <div class="vault-body">
               <h3>${esc(item.title)}</h3>
-              <p class="vault-spec">${esc(item.spec)}</p>
-              <div class="vault-origin">
-                <span>${esc(item.origin)}</span>
-                ${
-                  item.externalUrl
-                    ? `<a href="${esc(item.externalUrl)}" target="_blank" rel="noopener">Post ↗</a>`
-                    : `<span>In-Store</span>`
-                }
-              </div>
             </div>
           </article>
         `;
